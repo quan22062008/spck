@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tư Vấn Công Việc - JobConsult</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">JobFinder</div>
+        <ul class="nav-links">
+            <li><a href="#">Cơ hội việc làm</a></li>
+            <li>
+                <a href="#"> Công cụ</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-links">Trắc nghiệm tính cách</a>
+                    <a href="#">Tính lương Gross sang Net</a>
+                    <a href="#">Trang trí CV</a>
+                </div>
+            </li>
+            <li><a href="#">Cẩm nang nghề nghiệp</a></li>
+            <li><a href="#">Miền Bắc</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="./loginn.html" class="login-btn">Đăng nhập</a>
+            <a href="./registerr.html" class="signup-btn">Đăng ký</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center">
+        <div class="container position-relative">
+            <h1 class="display-3 fw-bold mb-3">Khởi Đầu Sự Nghiệp Hoàn Hảo</h1>
+            <p class="lead mb-4">Tư vấn chuyên sâu - Đồng hành cùng bạn đến thành công</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Bắt đầu ngay</a>
+        </div>
+    </section>
+
+    <!-- thanh tìm kiếm -->
+    <div class="search-wrapper">
+       
+        <div class="search-container"> 
+            <div class="search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="job-title" placeholder="Nhập vị trí công việc...">
+            </div>
+            <select id="location" class="filter">
+                <option value="">Chọn địa điểm</option>
+                <option value="hn">Hà Nội</option>
+                <option value="hcm">TP.HCM</option>
+                <option value="dn">Đà Nẵng</option>
+            </select>
+            <select id="salary" class="filter">
+                <option value="">Chọn mức lương</option>
+                <option value="5-10">5 - 10 triệu</option>
+                <option value="10-20">10 - 20 triệu</option>
+                <option value="20+">Trên 20 triệu</option>
+            </select>
+            <button onclick="searchJobs()">Tìm kiếm ngay</button>
+        </div>
+        <div id="results"></div>
+    </div>
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Dịch Vụ Cao Cấp</h2>
+   <!-- thanh địa điểm -->
+   <div class="container">
+    <div class="province-bar" id="provinceBar">
+        <!-- Các tỉnh sẽ được thêm bằng JavaScript -->
+    </div>
+</div>
+
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card h-100 p-4 text-center">
+                        <i  class="fas fa-briefcase feature-icon"></i>
+                        <h7 class="card-title fw-bold">Chuyên Viên Chăm Sóc Khách Hàng - Thử Việc 100% Lương - Không Áp Doanh Số</h7>
+                        <p class="card-text">Công ty TNHH Thương mại 7WEALTH</p>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card h-100 p-4 text-center">
+                        <i class="fas fa-file-alt feature-icon"></i>
+                        <h7 class="card-title fw-bold">Thiết Kế CV</h7>
+                        <p class="card-text">CV chuyên nghiệp, tối ưu để gây ấn tượng mạnh mẽ.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card h-100 p-4 text-center">
+                        <i class="fas fa-file-alt feature-icon"></i>
+                        <h7 class="card-title fw-bold">Thiết Kế CV</h7>
+                        <p class="card-text">CV chuyên nghiệp, tối ưu để gây ấn tượng mạnh mẽ.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card h-100 p-4 text-center">
+                        <i class="fas fa-file-alt feature-icon"></i>
+                        <h7 class="card-title fw-bold">Thiết Kế CV</h7>
+                        <p class="card-text">CV chuyên nghiệp, tối ưu để gây ấn tượng mạnh mẽ.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card h-100 p-4 text-center">
+                        <i class="fas fa-file-alt feature-icon"></i>
+                        <h7 class="card-title fw-bold">Thiết Kế CV</h7>
+                        <p class="card-text">CV chuyên nghiệp, tối ưu để gây ấn tượng mạnh mẽ.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card h-100 p-4 text-center">
+                        <i class="fas fa-file-alt feature-icon"></i>
+                        <h7 class="card-title fw-bold">Thiết Kế CV</h7>
+                        <p class="card-text">CV chuyên nghiệp, tối ưu để gây ấn tượng mạnh mẽ.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card h-100 p-4 text-center">
+                        <i class="fas fa-file-alt feature-icon"></i>
+                        <h7 class="card-title fw-bold">Thiết Kế CV</h7>
+                        <p class="card-text">CV chuyên nghiệp, tối ưu để gây ấn tượng mạnh mẽ.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card h-100 p-4 text-center">
+                        <i class="fas fa-file-alt feature-icon"></i>
+                        <h7 class="card-title fw-bold">Thiết Kế CV</h7>
+                        <p class="card-text">CV chuyên nghiệp, tối ưu để gây ấn tượng mạnh mẽ.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card h-100 p-4 text-center">
+                        <i class="fas fa-file-alt feature-icon"></i>
+                        <h7 class="card-title fw-bold">Thiết Kế CV</h7>
+                        <p class="card-text">CV chuyên nghiệp, tối ưu để gây ấn tượng mạnh mẽ.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card h-100 p-4 text-center">
+                        <i class="fas fa-file-alt feature-icon"></i>
+                        <h7 class="card-title fw-bold">Thiết Kế CV</h7>
+                        <p class="card-text">CV chuyên nghiệp, tối ưu để gây ấn tượng mạnh mẽ.</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card h-100 p-4 text-center">
+                        <i class="fas fa-file-alt feature-icon"></i>
+                        <h7 class="card-title fw-bold">Thiết Kế CV</h7>
+                        <p class="card-text">CV chuyên nghiệp, tối ưu để gây ấn tượng mạnh mẽ.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card h-100 p-4 text-center">
+                        <i class="fas fa-comments feature-icon"></i>
+                        <h7 class="card-title fw-bold">Luyện Phỏng Vấn</h7>
+                        <p class="card-text">Kỹ năng tự tin, sẵn sàng chinh phục mọi nhà tuyển dụng.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Về JobConsult</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="lead">Chúng tôi là đội ngũ chuyên gia tận tâm, với sứ mệnh giúp bạn khám phá và phát triển sự nghiệp mơ ước qua các giải pháp cá nhân hóa.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle text-primary me-2"></i> Hỗ trợ cá nhân 1-1</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i> Phương pháp hiện đại</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i> Mạng lưới tuyển dụng rộng</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Liên Hệ Ngay</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="contact-form">
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Họ và tên" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Tin nhắn của bạn" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Gửi Tin Nhắn</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p class="mb-0">© 2025 JobConsult. Tất cả quyền được bảo lưu.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
