@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ - Tìm Việc Làm</title>
+    <title>Chi Tiết Công Việc - JobTrend</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -15,63 +15,17 @@
         <div class="auth-buttons">
             <button class="btn btn-login" onclick="showModal('loginModal')">Đăng Nhập</button>
             <button class="btn btn-register" onclick="showModal('registerModal')">Đăng Ký</button>
-            <button ><a href="./loginn.html">Đăng nhập</a></button>
         </div>
     </header>
 
-    <!-- Search Section -->
-    <section class="search-section">
-        <h1>Tìm Công Việc Mơ Ước Của Bạn!</h1>
-        <div class="filter-bar" id="filterBar">
-            <button class="filter-btn active" data-location="">Ngẫu Nhiên</button>
-            <button class="filter-btn" data-location="hanoi">Hà Nội</button>
-            <button class="filter-btn" data-location="hcm">Thành phố Hồ Chí Minh</button>
-            <button class="filter-btn" data-location="mienbac">Miền Bắc</button>
-            <button class="filter-btn" data-location="miennam">Miền Nam</button>
+    <!-- Job Detail Section -->
+    <section class="job-detail-sectionn">
+        <div class="job-detail-containerr" id="jobDetail">
+            <!-- Nội dung chi tiết công việc sẽ được thêm bằng JavaScript -->
         </div>
-        <div class="search-bar">
-            <input type="text" id="keyword" placeholder="Tìm kiếm công việc...">
-            <select id="location">
-                <option value="">Tất cả địa điểm</option>
-                <option value="hanoi">Hà Nội</option>
-                <option value="hcm">Thành phố Hồ Chí Minh</option>
-                <option value="danang">Đà Nẵng</option>
-            </select>
-            <select id="jobType">
-                <option value="">Tất cả loại công việc</option>
-                <option value="fulltime">Toàn thời gian</option>
-                <option value="parttime">Bán thời gian</option>
-                <option value="freelance">Freelance</option>
-            </select>
-            <button class="btn btn-search" onclick="searchJobs()">Tìm Ngay</button>
+        <div class="back-button-containerr">
+            <a href="index.html" class="btn btn-back"><i class="fas fa-arrow-left"></i> Quay Lại</a>
         </div>
-    </section>
-
-    <!-- Banner Quảng Cáo -->
-    <section class="banner">
-        <div class="banner-content">
-            <h2>Khám phá cơ hội nghề nghiệp cùng JobTrend!</h2>
-            <p>Ưu đãi đặc biệt: Miễn phí đăng CV trong 30 ngày!</p>
-            <button class="btn btn-banner">Đăng Ký Ngay</button>
-        </div>
-    </section>
-
-    <!-- Featured Jobs -->
-    <section class="featured-jobs">
-        <h2>Công Việc Nổi Bật</h2>
-        <div class="job-listings" id="featuredJobs"></div>
-    </section>
-
-    <!-- Job Listings -->
-    <section class="job-listings-section">
-        <h2>Tất Cả Công Việc</h2>
-        <div class="job-listings" id="jobListings"></div>
-    </section>
-
-    <!-- Featured Companies -->
-    <section class="featured-companies">
-        <h2>Công Ty Nổi Bật</h2>
-        <div class="company-list" id="companyList"></div>
     </section>
 
     <!-- Footer -->
@@ -126,16 +80,6 @@
         </div>
     </div>
 
-    <!-- Job Detail Modal -->
-    <div id="jobDetailModal" class="modal">
-        <div class="modal-content job-detail-modal">
-            <span class="close-btn" onclick="closeModal('jobDetailModal')">×</span>
-            <div class="job-detail-container" id="jobDetail"></div>
-        </div>
-    </div>
-
-    <script src="./app.js"></script>
-    <script src="./loginn.html"></script>
-    <script src="./registerr.html"></script>
+    <script src="./job.js"></script>
 </body>
 </html>

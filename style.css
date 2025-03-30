@@ -507,3 +507,139 @@ footer {
     color: #888;
     margin: 2rem 0;
 }
+
+/* // */
+Job Detail Section */
+.job-detail-sectionn {
+    padding: 3rem 2rem;
+    background: #f7f9fc;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.job-detail-containerr {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.job-detail-containerr h1 {
+    font-size: 2.2rem;
+    color: #6b48ff;
+    margin-bottom: 1rem;
+}
+
+.job-detail-containerr .company {
+    font-size: 1.2rem;
+    color: #888;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.job-detail-containerr .job-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.job-detail-containerr .detail-item {
+    font-size: 1rem;
+    color: #555;
+    background: #f0f4ff;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.job-detail-containerr .job-meta {
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.job-detail-containerr .job-meta p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.job-detail-containerr .description,
+.job-detail-containerr .requirements,
+.job-detail-containerr .benefits {
+    margin-bottom: 2rem;
+}
+
+.job-detail-containerr .description h3,
+.job-detail-containerr .requirements h3,
+.job-detail-containerr .benefits h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.job-detail-containerr .description p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.job-detail-containerr .requirements ul,
+.job-detail-containerr .benefits ul {
+    list-style: disc;
+    padding-left: 2rem;
+    color: #666;
+}
+
+.job-detail-containerr .requirements ul li,
+.job-detail-containerr .benefits ul li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.job-detail-containerr .apply-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: #6b48ff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.job-detail-containerr .apply-button:hover {
+    background: #5438cc;
+    transform: translateY(-2px);
+}
+
+/* Back Button */
+.back-button-containerr {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 2rem;
+    background: #e0e0e0;
+    color: #333;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-back:hover {
+    background: #d0d0d0;
+    transform: translateY(-2px);
+}

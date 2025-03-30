@@ -1,4 +1,4 @@
-// Dữ liệu demo công việc với ID duy nhất
+// Dữ liệu công việc (sao chép từ script.js của trang chính)
 const jobData = [
     { 
         id: 1, 
@@ -8,12 +8,19 @@ const jobData = [
         type: "Bán thời gian", 
         salary: "10 - 40 triệu", 
         description: "Nhân sự đã có kinh nghiệm bán xe ô tô 6 tháng trở lên.", 
-        featured: false,
+        featured: true,
         requirements: [
             "Có kinh nghiệm bán xe ô tô từ 6 tháng trở lên",
             "Kỹ năng giao tiếp và đàm phán tốt",
             "Ưu tiên ứng viên có hiểu biết về thương hiệu BMW"
-        ]
+        ],
+        benefits: [
+            "Lương thưởng cạnh tranh",
+            "Đào tạo chuyên sâu về sản phẩm",
+            "Môi trường làm việc chuyên nghiệp"
+        ],
+        postedDate: "2025-03-20",
+        deadline: "2025-04-20"
     },
     { 
         id: 2, 
@@ -28,7 +35,14 @@ const jobData = [
             "Có kinh nghiệm từ 6 tháng trở lên ở vị trí nhân viên kinh doanh",
             "Hiểu biết về kênh Horeca (khách sạn, nhà hàng, quán cà phê)",
             "Kỹ năng giao tiếp và xây dựng mối quan hệ tốt"
-        ]
+        ],
+        benefits: [
+            "Thưởng doanh số hấp dẫn",
+            "Hỗ trợ chi phí đi lại",
+            "Bảo hiểm đầy đủ"
+        ],
+        postedDate: "2025-03-15",
+        deadline: "2025-04-15"
     },
     { 
         id: 3, 
@@ -38,12 +52,19 @@ const jobData = [
         type: "Bán thời gian", 
         salary: "Thoả thuận", 
         description: "Từ 2 năm kinh nghiệm trong lĩnh vực kinh doanh hoặc bán hàng kỹ thuật, ưu tiên có kinh nghiệm trong ngành thiết bị PCCC.", 
-        featured: false,
+        featured: true,
         requirements: [
             "Có từ 2 năm kinh nghiệm trong kinh doanh hoặc bán hàng kỹ thuật",
             "Ưu tiên ứng viên có kinh nghiệm trong ngành thiết bị PCCC",
             "Kỹ năng đàm phán và thuyết phục khách hàng"
-        ]
+        ],
+        benefits: [
+            "Môi trường làm việc năng động",
+            "Hỗ trợ đào tạo chuyên môn",
+            "Thưởng dự án"
+        ],
+        postedDate: "2025-03-10",
+        deadline: "2025-04-10"
     },
     { 
         id: 4, 
@@ -58,7 +79,14 @@ const jobData = [
             "Có ít nhất 3 năm kinh nghiệm ở vị trí kinh doanh hoặc pre-sales",
             "Hiểu biết về phần mềm ERP",
             "Kỹ năng tư vấn và giải quyết vấn đề"
-        ]
+        ],
+        benefits: [
+            "Lương thưởng cạnh tranh",
+            "Cơ hội thăng tiến",
+            "Đào tạo chuyên sâu"
+        ],
+        postedDate: "2025-03-12",
+        deadline: "2025-04-12"
     },
     { 
         id: 5, 
@@ -68,12 +96,19 @@ const jobData = [
         type: "Bán thời gian", 
         salary: "Tới 1,500 USD", 
         description: "Đã có kinh nghiệm tối thiểu 2 năm tham gia phát triển những sản phẩm về ERP, SaaS, quản lý, quản trị,..", 
-        featured: false,
+        featured: true,
         requirements: [
             "Có ít nhất 2 năm kinh nghiệm phát triển sản phẩm ERP, SaaS, quản lý, quản trị",
             "Thành thạo các công cụ thiết kế UI/UX (Figma, Sketch, Adobe XD)",
             "Kỹ năng giao tiếp và làm việc nhóm tốt"
-        ]
+        ],
+        benefits: [
+            "Môi trường sáng tạo",
+            "Hỗ trợ thiết bị làm việc",
+            "Tham gia các dự án lớn"
+        ],
+        postedDate: "2025-03-18",
+        deadline: "2025-04-18"
     },
     { 
         id: 6, 
@@ -88,7 +123,14 @@ const jobData = [
             "Có ít nhất 2 năm kinh nghiệm trong marketing thương hiệu hoặc quản lý thương mại điện tử",
             "Ưu tiên ứng viên đã làm việc với các thương hiệu lớn",
             "Kỹ năng phân tích và lập kế hoạch marketing"
-        ]
+        ],
+        benefits: [
+            "Thưởng hiệu suất",
+            "Cơ hội học hỏi từ các chuyên gia",
+            "Môi trường làm việc quốc tế"
+        ],
+        postedDate: "2025-03-05",
+        deadline: "2025-04-05"
     },
     { 
         id: 7, 
@@ -98,12 +140,19 @@ const jobData = [
         type: "Bán thời gian", 
         salary: "13 - 16 triệu", 
         description: "Ít nhất 3 năm kinh nghiệm trong thiết kế/sửa chữa/bảo trì hệ thống thiết bị cơ khí, ưu tiên ứng viên đã làm trong nhà máy có dây chuyền sản xuất", 
-        featured: false,
+        featured: true,
         requirements: [
             "Có ít nhất 3 năm kinh nghiệm trong thiết kế, sửa chữa, bảo trì thiết bị cơ khí",
             "Ưu tiên ứng viên đã làm việc trong nhà máy có dây chuyền sản xuất",
             "Hiểu biết về an toàn lao động và quy trình sản xuất"
-        ]
+        ],
+        benefits: [
+            "Bảo hiểm đầy đủ",
+            "Hỗ trợ ăn trưa",
+            "Thưởng cuối năm"
+        ],
+        postedDate: "2025-03-08",
+        deadline: "2025-04-08"
     },
     { 
         id: 8, 
@@ -118,7 +167,14 @@ const jobData = [
             "Có ít nhất 1 năm kinh nghiệm làm quản lý",
             "Ưu tiên ứng viên có kinh nghiệm quản lý đội ngũ bán hàng",
             "Kỹ năng lãnh đạo và giải quyết vấn đề"
-        ]
+        ],
+        benefits: [
+            "Thưởng doanh số cao",
+            "Cơ hội thăng tiến",
+            "Hỗ trợ đào tạo"
+        ],
+        postedDate: "2025-03-01",
+        deadline: "2025-04-01"
     },
     { 
         id: 9, 
@@ -128,12 +184,19 @@ const jobData = [
         type: "Bán thời gian", 
         salary: "12 - 15 triệu", 
         description: "Tốt nghiệp cao đẳng trở lên các nghành Y, Dược, Kinh Tế,....", 
-        featured: false,
+        featured: true,
         requirements: [
             "Tốt nghiệp cao đẳng trở lên các ngành Y, Dược, Kinh tế",
             "Có kinh nghiệm về trade marketing hoặc livestream là một lợi thế",
             "Kỹ năng tổ chức và sáng tạo nội dung"
-        ]
+        ],
+        benefits: [
+            "Thưởng theo dự án",
+            "Hỗ trợ chi phí livestream",
+            "Môi trường làm việc năng động"
+        ],
+        postedDate: "2025-03-03",
+        deadline: "2025-04-03"
     },
     { 
         id: 10, 
@@ -148,7 +211,14 @@ const jobData = [
             "Có ít nhất 2 năm kinh nghiệm tư vấn giải pháp hoặc triển khai về Mạng và Bảo mật",
             "Hiểu biết sâu về hệ thống hạ tầng CNTT",
             "Kỹ năng phân tích và xử lý sự cố"
-        ]
+        ],
+        benefits: [
+            "Hỗ trợ chi phí đào tạo",
+            "Môi trường làm việc chuyên nghiệp",
+            "Thưởng dự án"
+        ],
+        postedDate: "2025-03-07",
+        deadline: "2025-04-07"
     },
     { 
         id: 11, 
@@ -158,12 +228,19 @@ const jobData = [
         type: "Bán thời gian", 
         salary: "Thoả thuận", 
         description: "Không yêu cầu", 
-        featured: false,
+        featured: true,
         requirements: [
             "Biết tiếng Nhật (tương đương N3 trở lên)",
             "Ưu tiên ứng viên có hiểu biết về CNTT",
             "Kỹ năng giao tiếp và dịch thuật tốt"
-        ]
+        ],
+        benefits: [
+            "Hỗ trợ học tiếng Nhật",
+            "Môi trường làm việc thân thiện",
+            "Cơ hội làm việc với khách hàng Nhật Bản"
+        ],
+        postedDate: "2025-03-09",
+        deadline: "2025-04-09"
     },
     { 
         id: 12, 
@@ -178,7 +255,14 @@ const jobData = [
             "Có ít nhất 2 năm kinh nghiệm trong dịch vụ khách hàng",
             "Ưu tiên ứng viên đã làm việc trong môi trường thương mại điện tử",
             "Kỹ năng giao tiếp và giải quyết vấn đề"
-        ]
+        ],
+        benefits: [
+            "Thưởng hiệu suất",
+            "Hỗ trợ đào tạo kỹ năng",
+            "Môi trường làm việc chuyên nghiệp"
+        ],
+        postedDate: "2025-03-11",
+        deadline: "2025-04-11"
     },
     { 
         id: 13, 
@@ -188,12 +272,19 @@ const jobData = [
         type: "Toàn thời gian", 
         salary: "Thoả thuận", 
         description: "Có kinh nghiệm ít nhất 2 năm quản lý kênh OTC.", 
-        featured: false,
+        featured: true,
         requirements: [
             "Có ít nhất 2 năm kinh nghiệm quản lý kênh OTC",
             "Hiểu biết về thị trường dược phẩm",
             "Kỹ năng lãnh đạo và lập kế hoạch"
-        ]
+        ],
+        benefits: [
+            "Thưởng doanh số",
+            "Cơ hội thăng tiến",
+            "Hỗ trợ chi phí đi lại"
+        ],
+        postedDate: "2025-03-13",
+        deadline: "2025-04-13"
     },
     { 
         id: 14, 
@@ -208,7 +299,14 @@ const jobData = [
             "Tốt nghiệp Đại học trở lên chuyên ngành Kinh tế Kỹ thuật, CNTT, Cơ điện, Điện tử viễn thông",
             "Có kinh nghiệm quản lý kinh doanh từ 3 năm trở lên",
             "Kỹ năng lãnh đạo và đàm phán"
-        ]
+        ],
+        benefits: [
+            "Lương thưởng cạnh tranh",
+            "Cơ hội thăng tiến",
+            "Hỗ trợ đào tạo"
+        ],
+        postedDate: "2025-03-14",
+        deadline: "2025-04-14"
     },
     { 
         id: 15, 
@@ -218,12 +316,19 @@ const jobData = [
         type: "Bán thời gian", 
         salary: "25 - 30 triệu", 
         description: "Ít nhất 3-5 năm kinh nghiệm trong ngành du lịch, trong đó có kinh nghiệm ở vị trí quản lý sản phẩm/tour.", 
-        featured: false,
+        featured: true,
         requirements: [
             "Có 3-5 năm kinh nghiệm trong ngành du lịch",
             "Có kinh nghiệm ở vị trí quản lý sản phẩm/tour",
             "Kỹ năng nghiên cứu và phát triển sản phẩm du lịch"
-        ]
+        ],
+        benefits: [
+            "Thưởng theo dự án",
+            "Hỗ trợ chi phí đi lại",
+            "Môi trường làm việc sáng tạo"
+        ],
+        postedDate: "2025-03-16",
+        deadline: "2025-04-16"
     },
     { 
         id: 16, 
@@ -238,125 +343,190 @@ const jobData = [
             "Có ít nhất 1 năm kinh nghiệm ở vị trí giám đốc dự án BĐS",
             "Hiểu biết sâu về thị trường bất động sản",
             "Kỹ năng quản lý dự án và lãnh đạo"
-        ]
+        ],
+        benefits: [
+            "Thưởng dự án cao",
+            "Cơ hội thăng tiến",
+            "Hỗ trợ chi phí đi lại"
+        ],
+        postedDate: "2025-03-17",
+        deadline: "2025-04-17"
     },
     { 
         id: 17, 
-        title: "Phó Giám Đốc Phụ Trách Kinh Doanh ", 
-        company: "Công ty cổ phần Vật liệu Xây dựng Huy Hùng", 
-        location: "Hà Nội", 
+        title: "Kế đồ họa", 
+        company: "Công ty DEF", 
+        location: "Đà Nẵng", 
         type: "Bán thời gian", 
-        salary: "35 - 100 triệu", 
-        description: " Có 2 năm kinh nghiệm kinh doanh trong lĩnh vực thương mại vận tải", 
-        featured: false,
+        salary: "10-15 triệu", 
+        description: "Vị trí Kế đồ họa yêu cầu ứng viên có khả năng sáng tạo và sử dụng thành thạo các phần mềm thiết kế để tạo ra các sản phẩm đồ họa chất lượng cao.", 
+        featured: true,
         requirements: [
-            "Có kinh nghiệm kinh doanh trong lĩnh vực thương mại vận tải",
-            "Am hiểu thị trường vật tư vật liệu trên địa bàn tỉnh Hà Nội",
-            "Sử dụng máy tính thành thạo, biết làm các báo cáo liên quan đến lĩnh vực phụ trách"
-        ]
+            "Có kinh nghiệm thiết kế đồ họa từ 1 năm trở lên",
+            "Thành thạo các phần mềm thiết kế (Photoshop, Illustrator)",
+            "Sáng tạo và có khả năng làm việc độc lập"
+        ],
+        benefits: [
+            "Môi trường làm việc sáng tạo",
+            "Hỗ trợ thiết bị làm việc",
+            "Thưởng theo dự án"
+        ],
+        postedDate: "2025-03-19",
+        deadline: "2025-04-19"
     },
     { 
         id: 18, 
-        title: "Nhân Viên Kinh Doanh/Sale/Tư Vấn Cho Thuê Nhà Phố", 
-        company: " CÔNG TY CỔ PHẦN BẤT ĐỘNG SẢN GIGAREAL", 
+        title: "Nhân viên kinh doanh", 
+        company: "Công ty XYZ", 
         location: "Thành phố Hồ Chí Minh", 
         type: "Toàn thời gian", 
-        salary: "20 - 100 triệu", 
-        description: "Không yêu cầu kinh nghiệm về bất động sản, được đào tạo từ đầu.", 
+        salary: "15-25 triệu", 
+        description: "Vị trí Nhân viên kinh doanh yêu cầu ứng viên có kỹ năng giao tiếp tốt, đàm phán và khả năng xây dựng mối quan hệ với khách hàng.", 
         featured: false,
         requirements: [
-            "Siêng năng, chăm chỉ, nhiệt tình, ham học hỏi, chủ động, có tinh thần cầu tiến.",
-            "Đam mê kinh doanh và kiếm tiền, kỹ năng giao tiếp tốt.",
-        ]
+            "Có kinh nghiệm kinh doanh từ 1 năm trở lên",
+            "Kỹ năng giao tiếp và đàm phán tốt",
+            "Ưu tiên ứng viên có kinh nghiệm trong ngành bán lẻ"
+        ],
+        benefits: [
+            "Thưởng doanh số hấp dẫn",
+            "Hỗ trợ chi phí đi lại",
+            "Bảo hiểm đầy đủ"
+        ],
+        postedDate: "2025-03-21",
+        deadline: "2025-04-21"
     },
     { 
         id: 19, 
-        title: "Trưởng Phòng Kinh Doanh ", 
-        company: "CÔNG TY CỔ PHẦN TM&DV BẤT ĐỘNG SẢN AN VƯỢNG LAND", 
-        location: "Hà Nội", 
+        title: "Kế đồ họa", 
+        company: "Công ty DEF", 
+        location: "Đà Nẵng", 
         type: "Bán thời gian", 
-            salary: "80 - 100 triệu", 
-            description: "Có ít nhất 03 năm kinh nghiệm bán hàng trong lĩnh vực BĐS, ít nhất 01 năm kinh nghiệm làm trưởng nhóm bán hàng trở lên.", 
-        featured: false,
+        salary: "10-15 triệu", 
+        description: "Vị trí Kế đồ họa yêu cầu ứng viên có khả năng sáng tạo và sử dụng thành thạo các phần mềm thiết kế để tạo ra các sản phẩm đồ họa chất lượng cao.", 
+        featured: true,
         requirements: [
-            "Hiểu biết về kinh doanh BĐS",
-            "Sử dụng được các phần mềm tiện ích văn phòng",
-        ]
+            "Có kinh nghiệm thiết kế đồ họa từ 1 năm trở lên",
+            "Thành thạo các phần mềm thiết kế (Photoshop, Illustrator)",
+            "Sáng tạo và có khả năng làm việc độc lập"
+        ],
+        benefits: [
+            "Môi trường làm việc sáng tạo",
+            "Hỗ trợ thiết bị làm việc",
+            "Thưởng theo dự án"
+        ],
+        postedDate: "2025-03-22",
+        deadline: "2025-04-22"
     },
     { 
         id: 20, 
-        title: "Trưởng Nhóm Dịch Vụ Khách Hàng ", 
-        company: "Công ty chuyển phát nhanh Thuận Phong chi nhánh Hồ Chí Minh (J&T Express)        ", 
+        title: "Nhân viên kinh doanh", 
+        company: "Công ty XYZ", 
         location: "Thành phố Hồ Chí Minh", 
         type: "Toàn thời gian", 
-        salary: "20 - 25 triệu", 
-        description: "ó ít nhất 1 năm kinh nghiệm ở vị trí tương đương hoặc 2 năm kinh nghiệm ở vị trí Phó Nhóm (Ưu tiên công việc liên quan quản lý telesales, tư vấn, giải quyết khiếu nại)", 
+        salary: "15-25 triệu", 
+        description: "Vị trí Nhân viên kinh doanh yêu cầu ứng viên có kỹ năng giao tiếp tốt, đàm phán và khả năng xây dựng mối quan hệ với khách hàng.", 
         featured: false,
         requirements: [
-            "Có kỹ năng lập kế hoạch, tổ chức",
-            "Có kĩ năng phân tích, tổng hợp, báo cáo công việc",
-            "Giao tiếp Tiếng Trung là một lợi thế"
-        ]
+            "Có kinh nghiệm kinh doanh từ 1 năm trở lên",
+            "Kỹ năng giao tiếp và đàm phán tốt",
+            "Ưu tiên ứng viên có kinh nghiệm trong ngành bán lẻ"
+        ],
+        benefits: [
+            "Thưởng doanh số hấp dẫn",
+            "Hỗ trợ chi phí đi lại",
+            "Bảo hiểm đầy đủ"
+        ],
+        postedDate: "2025-03-23",
+        deadline: "2025-04-23"
     },
     { 
         id: 21, 
-        title: "Nhân Viên Quản Lý Hồ Sơ         ", 
-        company: "CÔNG TY CỔ PHẦN TẬP ĐOÀN MASTERISE", 
-        location: "Hà Nội", 
+        title: "Kế đồ họa", 
+        company: "Công ty DEF", 
+        location: "Đà Nẵng", 
         type: "Bán thời gian", 
-        salary: "13 - 15 triệu", 
-        description: "Tối thiểu 2 năm kinh nghiệm tại vị trí liên quan", 
-        featured: false,
+        salary: "10-15 triệu", 
+        description: "Vị trí Kế đồ họa yêu cầu ứng viên có khả năng sáng tạo và sử dụng thành thạo các phần mềm thiết kế để tạo ra các sản phẩm đồ họa chất lượng cao.", 
+        featured: true,
         requirements: [
-            "Cử nhân Kinh tế, Chính sách công, Văn thư lưu trữ",
-            "Hiểu biết về công nghệ lưu trữ",
-            "Năng lực chỉnh lý tài liệu"
-        ]
+            "Có kinh nghiệm thiết kế đồ họa từ 1 năm trở lên",
+            "Thành thạo các phần mềm thiết kế (Photoshop, Illustrator)",
+            "Sáng tạo và có khả năng làm việc độc lập"
+        ],
+        benefits: [
+            "Môi trường làm việc sáng tạo",
+            "Hỗ trợ thiết bị làm việc",
+            "Thưởng theo dự án"
+        ],
+        postedDate: "2025-03-24",
+        deadline: "2025-04-24"
     },
     { 
         id: 22, 
-        title: "Nhân Viên Tư Vấn, Sales, Bán Hàng, Chăm Sóc Khách Hàng ", 
-        company: "CÔNG TY CỔ PHẦN PHÁT TRIỂN NHÀ VẠN PHƯỚC", 
+        title: "Nhân viên kinh doanh", 
+        company: "Công ty XYZ", 
         location: "Thành phố Hồ Chí Minh", 
         type: "Toàn thời gian", 
-        salary: "40 - 100 triệu", 
-        description: " Nam/Nữ 20-30 tuổi", 
+        salary: "15-25 triệu", 
+        description: "Vị trí Nhân viên kinh doanh yêu cầu ứng viên có kỹ năng giao tiếp tốt, đàm phán và khả năng xây dựng mối quan hệ với khách hàng.", 
         featured: false,
         requirements: [
-            "Môi trường làm việc năng động, văn hóa GenZ rất phù hợp cho các bạn mới ra Trường",
-            "Chăm chỉ, có tinh thần cầu tiến.",
-            "Yêu kinh doanh, thích kiếm tiền"
-        ]
+            "Có kinh nghiệm kinh doanh từ 1 năm trở lên",
+            "Kỹ năng giao tiếp và đàm phán tốt",
+            "Ưu tiên ứng viên có kinh nghiệm trong ngành bán lẻ"
+        ],
+        benefits: [
+            "Thưởng doanh số hấp dẫn",
+            "Hỗ trợ chi phí đi lại",
+            "Bảo hiểm đầy đủ"
+        ],
+        postedDate: "2025-03-25",
+        deadline: "2025-04-25"
     },
     { 
         id: 23, 
-        title: "Tư Vấn Bán Hàng Xe Ô Tô", 
-        company: "CÔNG TY CỔ PHẦN DỊCH VỤ Ô TÔ BẾN THÀNH", 
-        location: "Thành phố Hồ Chí Minh", 
+        title: "Kế đồ họa", 
+        company: "Công ty DEF", 
+        location: "Đà Nẵng", 
         type: "Bán thời gian", 
-        salary: "30 - 40 triệu", 
-        description: "Tốt nghiệp Trung cấp trở lên. Ưu tiên các ngành Kinh tế, Quản trị kinh doanh hoặc các ngành liên quan.", 
-        featured: false,
+        salary: "10-15 triệu", 
+        description: "Vị trí Kế đồ họa yêu cầu ứng viên có khả năng sáng tạo và sử dụng thành thạo các phần mềm thiết kế để tạo ra các sản phẩm đồ họa chất lượng cao.", 
+        featured: true,
         requirements: [
-            "Đam mê và yêu thích công việc bán hàng. Có kinh nghiệm bán hàng là một lợi thế.",
-            "Sử dụng thành thạo máy tính và các phần mềm tin học văn phòng",
-            "Ngoại hình ưa nhìn, tác phong lịch sự, giao tiếp lịch thiệp."
-        ]
+            "Có kinh nghiệm thiết kế đồ họa từ 1 năm trở lên",
+            "Thành thạo các phần mềm thiết kế (Photoshop, Illustrator)",
+            "Sáng tạo và có khả năng làm việc độc lập"
+        ],
+        benefits: [
+            "Môi trường làm việc sáng tạo",
+            "Hỗ trợ thiết bị làm việc",
+            "Thưởng theo dự án"
+        ],
+        postedDate: "2025-03-26",
+        deadline: "2025-04-26"
     },
     { 
         id: 24, 
-        title: "Nhân Viên Tester", 
-        company: "CÔNG TY CỔ PHẦN APZON IRS VIỆT NAM", 
-        location: "Hà Nội", 
+        title: "Nhân viên kinh doanh", 
+        company: "Công ty XYZ", 
+        location: "Thành phố Hồ Chí Minh", 
         type: "Toàn thời gian", 
-        salary: "8 - 15 triệu", 
-        description: "Có kinh nghiệm kiểm thử phần mềm quản lý/ quản trị doanh nghiệp", 
+        salary: "15-25 triệu", 
+        description: "Vị trí Nhân viên kinh doanh yêu cầu ứng viên có kỹ năng giao tiếp tốt, đàm phán và khả năng xây dựng mối quan hệ với khách hàng.", 
         featured: false,
         requirements: [
-            "Tốt nghiệp đại học chuyên ngành KHMT, CNTT",
-            "Có kinh nghiệm trong lĩnh vực kiểm thử phần mềm",
-            " Kiến thức về CI/CD, GIT."
-        ]
+            "Có kinh nghiệm kinh doanh từ 1 năm trở lên",
+            "Kỹ năng giao tiếp và đàm phán tốt",
+            "Ưu tiên ứng viên có kinh nghiệm trong ngành bán lẻ"
+        ],
+        benefits: [
+            "Thưởng doanh số hấp dẫn",
+            "Hỗ trợ chi phí đi lại",
+            "Bảo hiểm đầy đủ"
+        ],
+        postedDate: "2025-03-27",
+        deadline: "2025-04-27"
     },
     { 
         id: 25, 
@@ -365,13 +535,20 @@ const jobData = [
         location: "Đà Nẵng", 
         type: "Bán thời gian", 
         salary: "10-15 triệu", 
-        description: "", 
-        featured: false,
+        description: "Vị trí Kế đồ họa yêu cầu ứng viên có khả năng sáng tạo và sử dụng thành thạo các phần mềm thiết kế để tạo ra các sản phẩm đồ họa chất lượng cao.", 
+        featured: true,
         requirements: [
             "Có kinh nghiệm thiết kế đồ họa từ 1 năm trở lên",
             "Thành thạo các phần mềm thiết kế (Photoshop, Illustrator)",
             "Sáng tạo và có khả năng làm việc độc lập"
-        ]
+        ],
+        benefits: [
+            "Môi trường làm việc sáng tạo",
+            "Hỗ trợ thiết bị làm việc",
+            "Thưởng theo dự án"
+        ],
+        postedDate: "2025-03-28",
+        deadline: "2025-04-28"
     },
     { 
         id: 26, 
@@ -380,13 +557,20 @@ const jobData = [
         location: "Thành phố Hồ Chí Minh", 
         type: "Toàn thời gian", 
         salary: "15-25 triệu", 
-        description: "", 
+        description: "Vị trí Nhân viên kinh doanh yêu cầu ứng viên có kỹ năng giao tiếp tốt, đàm phán và khả năng xây dựng mối quan hệ với khách hàng.", 
         featured: false,
         requirements: [
             "Có kinh nghiệm kinh doanh từ 1 năm trở lên",
             "Kỹ năng giao tiếp và đàm phán tốt",
             "Ưu tiên ứng viên có kinh nghiệm trong ngành bán lẻ"
-        ]
+        ],
+        benefits: [
+            "Thưởng doanh số hấp dẫn",
+            "Hỗ trợ chi phí đi lại",
+            "Bảo hiểm đầy đủ"
+        ],
+        postedDate: "2025-03-29",
+        deadline: "2025-04-29"
     },
     { 
         id: 27, 
@@ -395,53 +579,29 @@ const jobData = [
         location: "Đà Nẵng", 
         type: "Bán thời gian", 
         salary: "10-15 triệu", 
-        description: "", 
-        featured: false,
+        description: "Vị trí Kế đồ họa yêu cầu ứng viên có khả năng sáng tạo và sử dụng thành thạo các phần mềm thiết kế để tạo ra các sản phẩm đồ họa chất lượng cao.", 
+        featured: true,
         requirements: [
             "Có kinh nghiệm thiết kế đồ họa từ 1 năm trở lên",
             "Thành thạo các phần mềm thiết kế (Photoshop, Illustrator)",
             "Sáng tạo và có khả năng làm việc độc lập"
-        ]
+        ],
+        benefits: [
+            "Môi trường làm việc sáng tạo",
+            "Hỗ trợ thiết bị làm việc",
+            "Thưởng theo dự án"
+        ],
+        postedDate: "2025-03-30",
+        deadline: "2025-04-30"
     }
 ];
 
-// Dữ liệu demo công ty nổi bật
-const companyData = [
-    { name: "Công ty ABC", description: "Công nghệ hàng đầu", logo: "https://via.placeholder.com/100" },
-    { name: "Công ty XYZ", description: "Kinh doanh sáng tạo", logo: "https://via.placeholder.com/100" },
-    { name: "Công ty DEF", description: "Thiết kế chuyên nghiệp", logo: "https://via.placeholder.com/100" }
-];
+// Lấy ID từ URL parameter
+const urlParams = new URLSearchParams(window.location.search);
+const jobId = parseInt(urlParams.get('id'));
 
-// Hiển thị danh sách công việc
-function displayJobs(jobs, elementId) {
-    const jobListings = document.getElementById(elementId);
-    jobListings.innerHTML = '';
-    
-    if (jobs.length === 0) {
-        jobListings.innerHTML = '<p class="no-results">Không tìm thấy công việc nào phù hợp.</p>';
-        return;
-    }
-
-    jobs.forEach(job => {
-        const jobCard = document.createElement('div');
-        jobCard.className = 'job-card';
-        jobCard.innerHTML = `
-            <h3>${job.title}</h3>
-            <p class="company">${job.company}</p>
-            <div class="job-details">
-                <span class="detail-item"><i class="fas fa-map-marker-alt"></i> ${job.location}</span>
-                <span class="detail-item"><i class="fas fa-briefcase"></i> ${job.type}</span>
-                <span class="detail-item"><i class="fas fa-money-bill-wave"></i> ${job.salary}</span>
-            </div>
-            <p class="description">${job.description}</p>
-            <button class="btn btn-apply" onclick="showJobDetail(${job.id})">Ứng Tuyển Ngay</button>
-        `;
-        jobListings.appendChild(jobCard);
-    });
-}
-
-// Hiển thị chi tiết công việc trong modal
-function showJobDetail(jobId) {
+// Hiển thị chi tiết công việc
+function displayJobDetail() {
     const job = jobData.find(j => j.id === jobId);
     const jobDetailContainer = document.getElementById('jobDetail');
 
@@ -452,78 +612,34 @@ function showJobDetail(jobId) {
 
     jobDetailContainer.innerHTML = `
         <h1>${job.title}</h1>
-        <p class="company">${job.company}</p>
+        <p class="company"><i class="fas fa-building"></i> ${job.company}</p>
         <div class="job-details">
             <span class="detail-item"><i class="fas fa-map-marker-alt"></i> ${job.location}</span>
             <span class="detail-item"><i class="fas fa-briefcase"></i> ${job.type}</span>
             <span class="detail-item"><i class="fas fa-money-bill-wave"></i> ${job.salary}</span>
         </div>
-        <p class="description">${job.description}</p>
+        <div class="job-meta">
+            <p><strong>Ngày đăng:</strong> ${job.postedDate}</p>
+            <p><strong>Hạn nộp hồ sơ:</strong> ${job.deadline}</p>
+        </div>
+        <div class="description">
+            <h3>Mô Tả Công Việc</h3>
+            <p>${job.description}</p>
+        </div>
         <div class="requirements">
-            <h3>Yêu Cầu</h3>
+            <h3>Yêu Cầu Công Việc</h3>
             <ul>
                 ${job.requirements.map(req => `<li>${req}</li>`).join('')}
             </ul>
         </div>
-        <a href="job.html?id=${job.id}" class="apply-button">Ứng Tuyển Ngay</a>
+        <div class="benefits">
+            <h3>Quyền Lợi</h3>
+            <ul>
+                ${job.benefits.map(benefit => `<li>${benefit}</li>`).join('')}
+            </ul>
+        </div>
+        <a href="#" class="apply-button">Ứng Tuyển Ngay</a>
     `;
-
-    showModal('jobDetailModal');
-}
-
-// Hiển thị danh sách công ty nổi bật
-function displayCompanies() {
-    const companyList = document.getElementById('companyList');
-    companyList.innerHTML = '';
-
-    companyData.forEach(company => {
-        const companyCard = document.createElement('div');
-        companyCard.className = 'company-card';
-        companyCard.innerHTML = `
-            <img src="${company.logo}" alt="${company.name}">
-            <h3>${company.name}</h3>
-            <p>${company.description}</p>
-        `;
-        companyList.appendChild(companyCard);
-    });
-}
-
-// Tìm kiếm công việc
-function searchJobs() {
-    const keyword = document.getElementById('keyword').value.trim().toLowerCase();
-    const location = document.getElementById('location').value.trim().toLowerCase();
-    const jobType = document.getElementById('jobType').value.trim().toLowerCase();
-    const selectedFilter = document.querySelector('.filter-btn.active')?.dataset.location || '';
-
-    const filteredJobs = jobData.filter(job => {
-        const matchesKeyword = keyword === '' || 
-            job.title.toLowerCase().includes(keyword) || 
-            job.company.toLowerCase().includes(keyword) || 
-            job.description.toLowerCase().includes(keyword);
-        
-        const matchesLocation = selectedFilter === '' || 
-            (selectedFilter === 'mienbac' && ['Hà Nội', 'Đà Nẵng'].includes(job.location)) || 
-            (selectedFilter === 'miennam' && job.location === 'Thành phố Hồ Chí Minh') || 
-            job.location.toLowerCase() === selectedFilter;
-        
-        const matchesJobType = jobType === '' || job.type.toLowerCase() === jobType;
-
-        return matchesKeyword && matchesLocation && matchesJobType;
-    });
-
-    displayJobs(filteredJobs, 'jobListings');
-}
-
-// Xử lý sự kiện khi nhấp vào nút lọc địa điểm
-function setupFilterButtons() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-            searchJobs();
-        });
-    });
 }
 
 // Hiển thị modal
@@ -536,15 +652,7 @@ function closeModal(modalId) {
     document.getElementById(modalId).style.display = 'none';
 }
 
-// Khởi tạo hiển thị khi tải trang
+// Khởi tạo khi tải trang
 window.onload = () => {
-    // Hiển thị tất cả công việc
-    displayJobs(jobData, 'jobListings');
-    // Hiển thị công việc nổi bật
-    const featuredJobs = jobData.filter(job => job.featured);
-    displayJobs(featuredJobs, 'featuredJobs');
-    // Hiển thị công ty nổi bật
-    displayCompanies();
-    // Thiết lập sự kiện cho các nút lọc
-    setupFilterButtons();
+    displayJobDetail();
 };
