@@ -638,8 +638,7 @@ function displayJobDetail() {
                 ${job.benefits.map(benefit => `<li>${benefit}</li>`).join('')}
             </ul>
         </div>
-        <a href="#" class="apply-button">Ứng Tuyển Ngay</a>
-    `;
+        <button class="apply-button" onclick="showModal('applyJobModal')">Ứng Tuyển Ngay</button>    `;
 }
 
 // Hiển thị modal
@@ -651,7 +650,35 @@ function showModal(modalId) {
 function closeModal(modalId) {
     document.getElementById(modalId).style.display = 'none';
 }
+// Xử lý gửi đơn ứng tuyển
+function submitApplication(event) {
+    event.preventDefault(); // Ngăn form gửi đi mặc định
+    const form = document.getElementById('applyForm');
+    const formData = new FormData(form);
 
+    // Lấy dữ liệu từ form
+    const fullName = formData.get('Họ và tên');
+    const email = formData.get('Email');
+    const phone = formData.get('Số điện thoại');
+    const address = formData.get('Địa chỉ');
+    const cv = formData.get('cvUpload');
+    const introduction = formData.get('Giới thiệu bản thân');
+
+    // Ở đây bạn có thể thêm logic để gửi dữ liệu này đến server, ví dụ qua API
+    console.log({
+        fullName,
+        email,
+        phone,
+        address,
+        cv,
+        introduction
+    });
+
+    // Thông báo thành công và đóng modal
+    alert('Đơn ứng tuyển của bạn đã được gửi thành công!');
+    closeModal('applyJobModal');
+    form.reset(); // Xóa dữ liệu trong form
+}
 // Khởi tạo khi tải trang
 window.onload = () => {
     displayJobDetail();
